@@ -55,14 +55,19 @@ $(".d20").on("click", function() {
 		alert("You win!");
 		wins++;
 		$("#wins").text(wins);
+		counter = 0;
+		$("#currentScore").text(counter);
+		initialize();
 	}
 	else if (counter >= randomNumber) {
 		alert("You lose!!");
 		losses++;
 		$("#losses").text(losses);
+		counter = 0;
+		$("#currentScore").text(counter);
+		initialize();
 	}
 });
-
 });
 
 
